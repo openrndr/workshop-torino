@@ -25,7 +25,7 @@ val orxFeatures = setOf(
 //  "orx-gradient-descent",
     "orx-gui",
     "orx-image-fit",
-//  "orx-integral-image",
+  "orx-integral-image",
 //  "orx-interval-tree",
 //  "orx-jumpflood",
 //  "orx-kdtree",
@@ -42,7 +42,7 @@ val orxFeatures = setOf(
 //  "orx-palette",
     "orx-panel",
 //  "orx-parameters",
-//  "orx-poisson-fill",
+  "orx-poisson-fill",
 //  "orx-rabbit-control",
 //  "orx-realsense2",
 //  "orx-runway",
@@ -54,7 +54,7 @@ val orxFeatures = setOf(
 //  "orx-tensorflow",    
 //  "orx-time-operators",
 //  "orx-timer",
-//  "orx-triangulation",
+  "orx-triangulation",
 //  "orx-video-profiles",
     null
 ).filterNotNull()
@@ -163,6 +163,9 @@ dependencies {
 
 //    implementation("org.jsoup:jsoup:1.12.2")
 //    implementation("com.google.code.gson:gson:2.8.6")
+
+
+    implementation("org.ejml:ejml-all:0.40")
 
     runtimeOnly(openrndr("gl3"))
     runtimeOnly(openrndrNatives("gl3"))
